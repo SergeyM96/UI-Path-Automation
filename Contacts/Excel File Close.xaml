@@ -1,0 +1,489 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Flowchart" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="623.2,701.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Globalization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="Flowchart" sap:VirtualizedContainerService.HintSize="671,570.024" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
+      <Variable x:TypeArguments="x:Int32" Name="totalRows" />
+      <Variable x:TypeArguments="x:String" Name="name" />
+      <Variable x:TypeArguments="x:String" Name="surname" />
+      <Variable x:TypeArguments="x:String" Name="fullName" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:String" Name="phone" />
+      <Variable x:TypeArguments="x:String" Name="googlePhone" />
+      <Variable x:TypeArguments="x:String" Name="jobTitle" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="params" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_Contacts" />
+      <Variable x:TypeArguments="x:String" Name="rangeAddress" />
+      <Variable x:TypeArguments="x:Int32" Name="rowNumber" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">125,105</av:Point>
+        <av:Size x:Key="ShapeSize">50,50</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">175,130 205,130 205,140 225,140</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">225,105</av:Point>
+          <av:Size x:Key="ShapeSize">110,70</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\User31.8.23\Desktop\תרגיל מועמד שלא עבר הכשרה - UiPath\Contacts.xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,6487" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="574,201" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:F50&quot;)]" SaveTo="[DT_Contacts]" />
+              <Assign sap:VirtualizedContainerService.HintSize="574,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[totalRows]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[DT_Contacts.Rows.Count + 1]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="574,6112" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:F50&quot;)]" SaveAfterEachRow="False">
+                <ueab:ExcelForEachRowX.Body>
+                  <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                    <ActivityAction.Argument1>
+                      <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                    </ActivityAction.Argument1>
+                    <ActivityAction.Argument2>
+                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                    </ActivityAction.Argument2>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,5899" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow("שם פרטי").ToString()]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[surname]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow("שם משפחה").ToString()]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow("מייל").ToString()]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[phone]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow("טלפון").ToString()]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[googlePhone]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow("טלפון בגוגל").ToString()]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="506,1096" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="ec742f85-9820-4668-88f1-9e7fb3895c43" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,847" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'combo box Search Google…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec742f85-9820-4668-88f1-9e7fb3895c43" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="newtab" CVScreenId="1fda5501-e23c-4d46-a1e9-effeb59a976d" CvTextArea="310, 503, 205, 15" CvTextArgument="Search Google or type a URL" CvType="Text" DesignTimeRectangle="259, 486, 747, 48" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' automationid='' /&gt;" Guid="8cb2c216-84ba-4c31-844e-a8c9f05f7c68" ImageBase64="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" InformativeScreenshot="4a09a817aaf7dd597ca15ec964e84a2f.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Chromium' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'combo box Search Google…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="ec742f85-9820-4668-88f1-9e7fb3895c43" Text="[name + &quot; &quot; + surname]" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="newtab" DesignTimeRectangle="259, 433, 747, 48" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' automationid='' /&gt;" Guid="c145a2fd-bb87-4a61-84e2-c754a44cf54a" ImageBase64="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" InformativeScreenshot="14b8e445665cb31fca881eefca766b70.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Chromium' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V5" Visibility="Interactive" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'combo box Search Google…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,231" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="ec742f85-9820-4668-88f1-9e7fb3895c43" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V4">
+                                <uix:NKeyboardShortcuts.Target>
+                                  <uix:TargetAnchorable BrowserURL="newtab" DesignTimeRectangle="259, 433, 747, 48" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab' role='document' /&gt;&lt;ctrl name='Search Google or type a URL' role='combo box' automationid='' /&gt;" Guid="1dbf35ce-da16-465e-aa62-39a3b3d8f354" ImageBase64="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" InformativeScreenshot="92cdb9a6deeea154ce18153790fc76c1.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Chromium' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V5" Visibility="Interactive" />
+                                </uix:NKeyboardShortcuts.Target>
+                              </uix:NKeyboardShortcuts>
+                              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="10, 10, 1265, 1372" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a456d03c22dcea87ec0ee48b61641228.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Url="chrome://newtab/" Version="V2" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                      <If Condition="[phone = googlePhone]" sap:VirtualizedContainerService.HintSize="506,870" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="504,165" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="470,105" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[jobTitle]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">הטלפון בגוגל תואם</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="504,567" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:IfElseIfV2 Condition="[String.IsNullOrWhiteSpace(googlePhone)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="470,507" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
+                              <ui:IfElseIfV2.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[jobTitle]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">הטלפון בגוגל אינו תואם</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </ui:IfElseIfV2.Else>
+                              <ui:IfElseIfV2.ElseIfs>
+                                <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+                              </ui:IfElseIfV2.ElseIfs>
+                              <ui:IfElseIfV2.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[jobTitle]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">לא קיים בגוגל</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </ui:IfElseIfV2.Then>
+                            </ui:IfElseIfV2>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Mail - Sergey Morozov - Outlook" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="506,2671" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsDisplayNameAuto="True" ScopeGuid="c72c4c3f-ff29-463f-b94d-933a56e0272d" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2372" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'graphic People'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="ce5fc39a-3eab-40fa-82cd-43a8d10f023d" CvElementArea="18, 288, 25, 23" CvType="Icon" DesignTimeRectangle="21, 290, 20, 20" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;wnd aaname='Mail - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='Mail - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='Mail - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='left-rail-appbar' role='grouping' /&gt;&lt;ctrl name='People' role='grouping' /&gt;&lt;ctrl name='People' role='push button' /&gt;&lt;ctrl name='People' role='graphic' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Mail - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='Mail - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='Mail - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='left-rail-appbar' role='grouping' /&gt;&lt;ctrl name='People' role='grouping' /&gt;&lt;ctrl name='People' role='push button' /&gt;&lt;ctrl name='People' role='graphic' automationid='' /&gt;" Guid="a6fb2fde-9444-4303-8877-1145349d4ca2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO3SURBVEhLlVRdT1RXFPUvGQ1gQaKNDzaND33BNha04ji2QiOYVrTFFm1qeDDxAx7V6IuJ7YMSaqA6DFjAYQScDM4woGBLrYOIcO/cGZnZx2SZfc4992Muqfqwss+dTNba65y99oZ8gZB/LWy8UTUvYDEKNvJkQyAvv/3IWeTAzJVUlWfChsKaIi04IgoO+XpgUh/IgSS2YbBAOTkT6D97SX3fHnImcslLMHIlj4hQAmz7vTpfR+C9HJS70ELzrwgTWYGsWebofwQCDsqJ2U3WFDg/JdA0JvDNfYGD9wSupj7MgeE48E2REjiXFGiOE5rjqn49KrB/gPDbtJ9sdNrAlUgW0eRK4A1YgGvAAV/LoRGB5gc24gKHYwKNUYGjgy55V/8itv06g60dKXx04iFOX58LOHAeWYrwQxcExp/zlZC8HuVASMGvIoT624r8+fIaan+ZxvbOx9h6igUSqGgdQ2o+V/YGdg68AlmDsD+i7p2Jw3+p7hv6CT+wA4swNZ9DzU9TqO1IoeZkElvaJlHREsNQYtkNnBZw3sAWsAqEy8kSGv4k7LtL2HuH8GUf4fMeQnTOTewXZ1PYcnwSVccmZPc72sawslr0J1kKeB5XCzBupAVaIoQ9vYQTg4rc8qyE8cwqQhdSqGyJob4zgeik2/07Hfigp8YqOTvJS6T3j+7cMPms9pB/imyBJVMg85Iws0yY4fqSkFkiZF4Q7k6tID23gtkFE0+eFTD7LI/HXP+1MLtgvdvBwFOS0xIe5ilyc3BohNAYJdT3ET67lkVlay+q2+OoPZ1GdTs/8oR85E9/jOPc709k9xwy2wELKOuhiEBoSCW4PAcHhniSBHb3EHZ2pVHTfl/l4OdHMgeVR+PY3DyCT47HZOA8DkpSgK+GJybEGbDnX4PXhXZQd5Ow68p/qDp2D7Wn0qjWY9o6hk1NI9gYHvILaAd8VR0x5YA75u6/faDchIc5aAJ7bgvU3SJ8fGYCld8No6Y9Kbuv+n4cFUdi2HR4GIOJJVtAiTgOWCC1yCEjmWS+dw4an3kPcfe7bxHaBkqY+cdA9x8LCHdncLArjdD5R7h48ykyf5swTJUFR0A70NM0v0zoTjApLziBfXcUeaiPcOlhcER5fN2O1bgyeGUYuaLrQArxRNngDCy8KmF6kbBo2DkIkAcFtANHwJkiFioT0EFzECAPCgQcWHk/sSTPcyqLssqzk2T+XYHJZM0V3e5zRayaa7KyE/uK/OReEVdArwklzNAC5Q4kuS3ATt4CEfccCb/nyugAAAAASUVORK5CYII=" InformativeScreenshot="23cc34a063576c6caab4714790238275.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='Mail - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New contact Create a ne…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="02eaf26f-fc41-468b-8615-51e2c472f593" CvElementArea="66, 86, 162, 36" CvType="InputBox" DesignTimeRectangle="68, 88, 131, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Ribbon' role='pane' /&gt;&lt;ctrl name='Home' role='property page' /&gt;&lt;ctrl name='New' role='grouping' /&gt;&lt;ctrl name='New contact' role='menu button' /&gt;&lt;ctrl name='New contact' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Ribbon' role='pane' /&gt;&lt;ctrl name='Home' role='property page' /&gt;&lt;ctrl name='New' role='grouping' /&gt;&lt;ctrl name='New contact' role='menu button' /&gt;&lt;ctrl name='New contact' role='push button' automationid='' check:fulltext='New contact Create a new contact. (Ctrl+N)' /&gt;" Guid="462a2794-58b8-4c36-a11f-6c26fd971454" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIcAAAAkCAYAAACjbylKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQJSURBVHhe7ZzfSxRRFMf9p/pLhF57LQiCnoKCwKIXH6Qe+h2WFEKQEJX9kArMfiBKmpVSukZWmqbrj13dXXc98b1wprNn7mzOrCO77DnwYeaec3/Mvfc7996RtjYyM4uwNu0olCqU39rWbrMWtCpxjHxZppPd43Tg6BOjBYHJdCCOF2ML1N4xGCpgtA6R4rAVw/CKA2cMWzUMrzi002hNtA5MHEaA1oGJwwjQOjBxGAFaB3sijq6+Kfq1vEmVyo4D9/DpfEZjo3VQtziu9k9TbmubBkbn6eDZIQfu4UNM5zcaF62DusTR3vGKZhdyTgw6Bh9iyKNjRmOidVCXOE7dHKff2S06c3siFIMPMeTRsSRk5jeoVK7Q9cfVq9Hpng+U3SiG/EZ8tA6aShyruZK7Sn+ziwPPjedHP3QsLhib4ak/If9u0TqoSxz7ua2g45Pf1yhf2Kb7b+YCv4njHw0lDnDl0Vda3wwfSOFDTOdPCnccwoBAeDB94kAeNt6KjlwYpsXsVpWwUKdciVC/XpkYLs+Ge/i4nDQ5QWgPeccz2SDObcjnrOXXE67jrz8tVj2bb/vdDTCZrlscYD8+ZeVbISdVi0OLhycHEyknH3Hkk3kRk+JhWBhykgYnFoM6tVjl6sYTyWXxnJg8jvtWjrGZbNXz6/7INMr3vvwWPL8WUhy0DvZEHD4Onx92/z6kWKq4+nFFGn6ddzfIjktBaHHoAcIE/ljadHGAe/hwj7wcQz0QgG95lwKTft9qBKQIfWXlM/rEIZH9i2rPV28StA4SiaNvaC6YdG0r60XqvPvZHUZ9Bv+xiyOhOv+H7jjuMVBd9yZDg+czDKgcaJSHD1e+j9pS5GRLtDAZKYgk4uDVhY23iaj2fPUmASbTscVx4sYYLa0VqPvpTCjGvJ9eCTqWL5Tp1rOMu7Ihrsv8D91xFgIOqXrliHqzOI79H1cMNq8m8EUNrG+C5TPo9qTQfGVriUOnm2rlcMvvasH7+QqOXx51qwcb9sdr/dPuyoY48umytfB1nN8weQDTe7KG4xAV0rzt4DM56o1EXSgj249z5ogjDp0fadk/3R78DXPmONT5luaW8vTw3c9QDPDgYKU41/uxKoY0/LUmL4qojsOnT+fwSZODrSeP69YTqOFybHKb0e3JuvVkc3uyL0hznXprxL3eSmR7su++lyUOMJmOLQ5w5/mse9MuPQh/qqa1chjpo3WQSBwAh9JCqUyz8znqGchUvRlpnDmM9NE6SCwOgM9S/MFreb1I5cqOqyetrxUjfWAyXZc4arHXf+cw0kfrIDVxGM2H1oGJwwjQOjBxGAFaB04c9qMmA3jFAbOfQxqR4rAfUhuR4oDZf8HQ2tQUh5mZNBOHWaT9BVoZGSgq9w6WAAAAAElFTkSuQmCC" InformativeScreenshot="395fcaaaf775bdb738313b63c2fd4b57.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="02eaf26f-fc41-468b-8615-51e2c472f593" CvElementArea="66, 86, 162, 36" CvType="InputBox" DesignTimeRectangle="107, 93, 78, 20" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Ribbon' role='pane' /&gt;&lt;ctrl name='Home' role='property page' /&gt;&lt;ctrl name='New' role='grouping' /&gt;&lt;ctrl name='New contact' role='menu button' /&gt;&lt;ctrl name='New contact' role='push button' /&gt;&lt;ctrl name='New contact' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Ribbon' role='pane' /&gt;&lt;ctrl name='Home' role='property page' /&gt;&lt;ctrl name='New' role='grouping' /&gt;&lt;ctrl name='New contact' role='menu button' /&gt;&lt;ctrl name='New contact' role='push button' /&gt;&lt;ctrl name='New contact' role='text' automationid='' check:text='New contact' /&gt;" Guid="4ee005a8-dad6-4f51-bab8-d63a3a31c9a5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAYCAYAAABp76qRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIPSURBVFhH7Zc7SwNBFIXzp/xRgv/BnyBYW9lYWVhpJwhapPKBxEKDqCBEYZX4jMrKCZzN2bOzwcSxEO7AYWfuPO693zyinYWlnTL0e3XcEJpPATKTAmQmBchMCpCZFCAzKUBmUg1k/3ZYjj6/yrXt89qg5fXjshi+N+yhiRogH55G46/a/ztIxI34kYf3zSqw6Z7dN+wNkL2rx/L57aPcOriu7AFyoh+DxCBABEw6ToHEGBY+B4ur3XJQvNY2AWvqCcf6fuIpzmdBHTbO06LJwB/GHvWLqp8+NM5pdofj/fung1ps/gQmQbJOpw7SQTMRJK2g0I9xOhZ9CpoiRE1o72RQrekbq7eGSXMu4kSi7E+dyMOLoha/56NtzN/Yvazid+hQK0iF5yB9MSR7c/cy7odQhw11jGUf1gGs1BXTzVB76pRDumGpuRpjCqRK82vzl1pX1QoSQh2Lrmz2Go5SBc41KMyHDV/W2661glH5JlIKbx6QPLUsvKpt/lLrqqaCJDT8APmJbNsx9uO9wheB8ZTClgoCSsHQGNyfbkpq7jSQ3v7zE0mn2C19XP0NcbEfG4A2rz7+tGrbaayFOep/ljdyFpA+Hm3Nz/3BPvcbqYLNf6Vg06KBeaJc25N1cR6LXnX3p2s7GPrTXNDmmv48oe7XWf1p7qmDBcW/iJkUIDMpQGZSgMykAJlJATKTvgFv4722s5oOsQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text First name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Text="[name]" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvElementArea="362, 133, 489, 33" CvType="InputBox" DesignTimeRectangle="368, 140, 480, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl name='First name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl name='First name' role='editable text' automationid='' /&gt;" Guid="04851259-81f2-4834-857a-79c7e2ba9f89" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeQAAAAdCAYAAAB7RB+cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACmSURBVHhe7dUxDYBAAARBTGHg9SAQd5BQUEANv8VMcs0Z2OUAAKZbngcA8D9BBoAAQQaAAEEGgIBXkMcYzwsA+JggA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQMAryADA/wQZAAIEGQACriCv225mZmaTdgcZAJjrBL2wQG27HhClAAAAAElFTkSuQmCC" InformativeScreenshot="6e8f6ec9a9ca0a52fd0635adde719342.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvTextArea="367, 126, 56, 12" CvTextArgument="First name" CvType="Text" DesignTimeRectangle="368, 124, 55, 16" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl role='editable text' automationid='' /&gt;" Guid="3532f515-1182-4b4e-b128-1ba38e9b65d1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADsAAAAUCAYAAAAz30VQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAExSURBVFhH7ZY9DoMwDIU5GzsHYGZnZ+cSzOwcgkuwszIzp3pIDzmW0x/o0CZ5UkSTOLa/OKQULiEVeiBmZdhYlWFj1Qm777tr29aVZXm2eZ7dsiyuaRq3bZu/8g/lwXZdd8DdVd/3x0b9mjKsFPoYxzx/o9V17dZ19Y4+AAHKPuawTmocRzcMw7lO2mCOa+Gfrw58TtN0jDEObauq8nKW8WEjFXxn6UTDYpxVI5zWs8oiAfpmTMsWdkwW/gjPHDiHJ3OQca3iXaosK6EDU69gpb3sA4bVQ7MgYIMNYtW54bpYbDKPW7AUjxQdX4FF8rj1GV+emndhrfylvgILhZLTCsHCt/yLgw/LXwhWr7F0CxaBrAuF46ELyoKFkKg8wp/C6qMsc4LS/IJKQRk2ViUF+wCZN0+mccIv8AAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text Last name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Text="[surname]" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvElementArea="364, 185, 486, 31" CvType="InputBox" DesignTimeRectangle="368, 190, 480, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl name='Last name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl name='Last name' role='editable text' automationid='' /&gt;" Guid="7ec3adba-bdc0-4669-9562-25b98bb9fbb0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeQAAAAdCAYAAAB7RB+cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dWxDYAwAAPBDIpQ9l8idBTQJ1/cSW68wI8FABw3vgcAsJ8gA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0CAIANAgCADQIAgA0DAG+R5X2ZmZrZ5vyADAOc8D0f3m0HSe6sAAAAASUVORK5CYII=" InformativeScreenshot="3d891f8e95db4ca403991b1b7ef566f8.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvTextArea="367, 176, 55, 12" CvTextArgument="Last name" CvType="Text" DesignTimeRectangle="368, 174, 54, 16" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl idx='3' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Name Section' role='grouping' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" Guid="5f82bc71-6236-4537-9d17-1d4fd7c452aa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAUCAYAAADcHS5uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE9SURBVFhH7ZYhzoRADIX3bHg8aDwez03wHIILINFoNHo23yaPlALLT7K/GXjJBKbTvvaVQniFm+DlDbHiERobHqGxYRE6z3OoqioMw7D2iAQ/FfoLjv/CI1SYpinkeR6SJPmspmk29jRNQ9/3oSzLxa+u6xUPwNa27RInH3LvxZIDOzHYiRvHcfHlSqzl93UKp0ItlJgrRJ7sjINCKJZ4VlEUG1/LoWZKOPloKmdqTtd1C7fu9+r4k1ASqFNKBCl7kYNvHMAW4/fi02JvGysfOymK9xNhOYRToYi0I+Z9OLNd9ucWR0JZdgxlvyL0W15wKhQyjShnWZZtfDTGRxzCkVDbTI3rFaG6t2ceK6H+8VMARfPE2PNO4YPNjrN9GrLvJT0Saj9sXPXuXRHq69e3QLjfn1HseITGhtsIfQN2cgKig22jqgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text Email add…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Text="[email]" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvElementArea="270, 286, 580, 43" CvType="InputBox" DesignTimeRectangle="276, 304, 572, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Email section' role='grouping' /&gt;&lt;ctrl name='Email address 1' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Email section' role='grouping' /&gt;&lt;ctrl name='Email address 1' role='editable text' automationid='' /&gt;" Guid="0b8a8cf6-14b6-4ea0-b0db-b7735b5c023b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkAAAAAdCAYAAABCFdM2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACmSURBVHhe7daxDcAgAANBBo1Q9l8i6ShgA/5OcuMJfnwAADFjPwAAbieAAIAcAQQA5AggACBHAAEAOQIIAMgRQABAjgACAHIEEACQI4AAgBwBBADkCCAAIEcAAQA5AggAyBFAAECOAAIAcgQQAJAjgACAHAEEAOQIIAAgRwABADkCCADIEUAAQI4AAgByBBAAkCOAAICcFUDvfMzMzMyu3hFAAAAVP4QH0r7a6g3WAAAAAElFTkSuQmCC" InformativeScreenshot="37024621705d948bafc0c7cc2283138b.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvElementArea="270, 286, 580, 43" CvType="InputBox" DesignTimeRectangle="276, 288, 73, 16" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Email section' role='grouping' /&gt;&lt;ctrl role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Email section' role='grouping' /&gt;&lt;ctrl role='editable text' automationid='' /&gt;" Guid="5464a5b9-0885-480c-8e9f-cb7bc3fd14ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAUCAYAAADIiLCPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGJSURBVFhH7Zc9joQwDIXnbPT0UNPT01NzCXoOwSWoqaGlzuohPWS8SYa16NZPioA4duwvP6P5BNef9dEdru9yaAY5NIMcmkEOzaAL2nEcoW3bUBTF1eZ5vo82ahzH0Pf99Y5m1bZtZ554auVsb+oGreu6sCzLfcTLcmgG/QtoTGSapvPI1nUd1nW9jjKe8IVwnHm0y7K8YklQKWgpXwjjaRuG4QYmZYM/6kFDzuxDbNYRi8FrROYja4SSdxoTR2BMIO8k2ugTu/vQF7vHUtCkpC/edYH8ztkIiLkRolxgzBHbnakNRD3eaQwqC4LwzsQ0eK7QE2g5X7koMp+cLQaJseUc+76fT72bUJdcEKnXoOldJ5P+Bi3nKxcFkvnkbDFoMm8t7kw5BnEATgN9DRrsTdNc/gDzdKflfBFbJg2bPJ4pm4aG76qqftUnpWuFYlySdxoaktCBUtAgjKcvL+En0HK+EOagTf8QpGwaGqSPKOsDaPbJUyPHSfk/AoMcmkEOzSCHZpBDM+gHArRv+c6viuAAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text Mobile ph…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Text="[phone]" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvElementArea="270, 457, 581, 47" CvType="InputBox" DesignTimeRectangle="276, 478, 572, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Phone Section' role='grouping' /&gt;&lt;ctrl name='Mobile phone number' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Phone Section' role='grouping' /&gt;&lt;ctrl name='Mobile phone number' role='editable text' automationid='' /&gt;" Guid="8c0b8bdd-3e50-4cf0-a91c-64665833c1c6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkAAAAAdCAYAAABCFdM2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC5SURBVHhe7daxDYNAAARBCrUQxXxl3xhkBDiyRADeGemSq2CX/UXGGPuc83oDAPxkuR5PJoAAgDu8KoAAAO4ggACAHAEEAOQIIAAgRwABADkCCADIEUAAQI4AAgByBBAAkCOAAIAcAQQA5AggACBHAAEAOQIIAMgRQABAjgACAHIEEACQI4AAgBwBBADkCCAAIEcAAQA5AggAyBFAAECOAAIAcgQQAJBzBtC2fszMzMz+el8BBABQcQCUh85uO7wB8QAAAABJRU5ErkJggg==" InformativeScreenshot="a9778c424508fbafdd51b578b4ed5f2a.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvElementArea="270, 457, 581, 47" CvType="InputBox" DesignTimeRectangle="276, 462, 119, 16" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Phone Section' role='grouping' /&gt;&lt;ctrl role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Phone Section' role='grouping' /&gt;&lt;ctrl role='editable text' automationid='' /&gt;" Guid="1ce71ecd-261c-44a5-bb95-e82b86c86771" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAUCAYAAACtZULwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJWSURBVGhD7ZixjiIxEET328jJISYnJycmJybnI/gJYkiJiVk9dIWKogfY3eNW3Lgka8Zju7vdr8eD+Dg19UYf+aDp/1WD3SM12D1Sg90jNdg90gX28Xg8TafT03w+v57xRzzvGnNtt9vTbDY720sxNplMTofD4e6874jYNptNPn57rVarc/sbuoJN8gEODJcgLRaLq+eVnoX47Lxn1WA/1g1sWhqnv1wuG+xf0Ethr9frKwi85bztPPdjnMQOBoNzGw6HZ3hIECkOjQuCA07Ybg9/VRHgnzjG4/HNvBzzWPFFjBmP7y3Hch1288RDehGw4zEpn8qL99Mvtne73Y2Nyn7GwT4Vu4pCuaX5/BvYTPS3hCtGuCqB3LsRHfP6FpMgd1x9p/3ebaOuamaO+6WveT5Gwyc+aKPR6JJ0H+OeNb4vJboqxuo3C/5V7MxlPXMfwXa/XTZyTH2tc05uXwzypCtha2PVMyT4LjnOJHWN+T32VJ1qVWJ9c8ht5Jj6tCwcFZPeMBWP91mXMVUnTham+o9gu98sJN9L2tfa/X5/edu9ZZ5dJWzdc8zoO/1q2AmkUgJ9Neyq4FIZ+7+E7fZdFQNUwkY4UKUgD4j7e8e4H5s5VsFOe13CfyZFieiCnfHgw4/xLti5rksJw/sen9tLv49g+4lCX3MzH9KXYRMIhrQgA1Ix0PIHGsGR0Gqsgp32vMhc2pzmdCUo+1wr25n07Oc6hyrdg80e9QOPfGD7O7DJk+w4eK5+lOuFydxKb/UPWgJt+poa7B6pwe6R3gp208/UYPdIn7t856EiEvzMAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add work field'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="72074071-bd84-4fbf-a7e3-9470facbb7bf" CvTextArea="302, 699, 92, 13" CvTextArgument="Add work field" CvType="Text" DesignTimeRectangle="304, 699, 91, 14" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Work section' role='grouping' /&gt;&lt;ctrl name='Add work field' role='menu button' /&gt;&lt;ctrl role='grouping' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Work section' role='grouping' /&gt;&lt;ctrl name='Add work field' role='menu button' /&gt;&lt;ctrl role='grouping' automationid='' check:text='Add work field' /&gt;" Guid="192f0c26-84a1-4441-9513-4cbf3645963e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAASCAYAAAA9igJHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJfSURBVFhH7ZcxSx1REIX9U/6A/IBYmx9gZ2FjJdqppWBjJSmDlWVSBFGwsRAUtBACJt3jNUmhWFhc+STnMe+82b1roYuyB5Zl7505M3PuzH28uTKgN8z5woC3wyB+jxjE7xGp+Fe//5VPqz/L0cXIt2Yw/vtQvmydPvs0Ye3rZdn//suXXx3kv7RzVu4fHn0rBfbzyz/KwsZJOb0al8/rx611CbU4cKARWkWk4iOWnho+ivhd6mhCLU5n8TGA6Pq/Qy2ZLkm/B/GbBOqCWpwm7hnxIVLHZ6IRgECMJ8/2t+sZ8fHRPrYre+czPMCThiOOuh+srgU9cTJlu3t4M9lzfta4UlyEjNdje90xtsfBlziyJadO4itp4KRKIAqJPb8PSpK96KPCMvG9QB2abFnn4OCCJ8bxXFRwkyisv6Q7Y24eS9+ZTspDe7LNDn1K/LYEsn238aSEbIKEeNhMEV0iAfGRX8bhRfsEah/ONuGB1xb5fA/ArTxjHt6wGbcwJX68LnwMQUYck8wEAJlwAusac963o7vnGLzp+rZDjUVlsTV1Wdc5XKDIJx5/MsFVTxu3MBG/S4EZCWu6pzMOH1mHOA+O/0x1Od/4KVZ2gPjqWmoSX51fOwCvLfLFOBlqnc9aFn8ivgcXoqDsQRJF8Dvf71Z1jQsnYEdhi5vTP6x8+/1du/ObxFdHZgIIXn/k81iOGAf7+B9JvlnsifgU6uMiEFTkOgCNHh3qRcMTr6ysayMiP/ACBB//yFkTHygv5wVt4us71h15PI7yx4a3NGoUf8DbYxC/Rwzi94hB/B7xBKCBGZ0TPq1xAAAAAElFTkSuQmCC" InformativeScreenshot="adbddee1fb53b550e90bd970685d1f34.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Title'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="b2372309-c713-48fa-8e6a-c23676608dea" CvTextArea="282, 733, 28, 13" CvTextArgument="Title" CvType="Text" DesignTimeRectangle="276, 721, 207, 37" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Add work field' role='popup menu' /&gt;&lt;ctrl name='Title' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Add work field' role='popup menu' /&gt;&lt;ctrl name='Title' role='menu item' automationid='' check:text='Title' /&gt;" Guid="84a422b1-f7ac-4d9b-945b-5ef606620afb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANMAAAApCAYAAACvDhymAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHLSURBVHhe7dhbisJAEEDRXltWEnArZiODK9GV5M8nCL6NsYcyPmJFnRZLMtF7oCBj6Xx5SWy33++9njzPGYZ5MLoZGXcroN1ud3eyLGOYrxj93S/PrbBcOaDtdnuezWZTmfV6zTBfNboBmXIn5bAOMUmFeZZ7AM+Rbg79SExysVwu9XsABJJ+pCMnt63ZbKb3AAJJP9KRk+fC6XSq9wACST/SkVutVn4ymeg9gEDSj3Tk5HlvPB7rPYBA0o905BaLhR+NRnoPIJD0Ix25+Xzuh8Oh3gMIJP1IR05OIgaDgd4DCCT9SEfEBLzoKqZ+v6/3AAJJP8QEGCAmwMjTMXXbkY+iW5P47mnflqs7eomPWh2f6teBhns6povUd1qRT3r69WsSV/xTSoeY8KGICTBiHlP6Ex8f84r95TEw9h0pqBJT1yelx8Wr8IAGeWNMhcd3piKky/+Qv4/RAQ1Tb0yVu1Txee5OaKJaYzq8t3Iq+MdpIPBP1RrT4Zpw8CHqjanymwlorrfH5NOOjx+d5p336tQPaJgXYgJQRkyAEWICjBATYISYACPEBBghJsAIMQFGiAkwQkyAEWICjBATYISYACPEBBghJsDIKaZfvdLPNhewPFAAAAAASUVORK5CYII=" InformativeScreenshot="27e84dc991e4e43370fcd036128f0656.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text Title'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Text="[jobTitle]" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CVScreenId="e80bb18b-1ca7-4928-8f20-fa0d486d52a5" CvElementArea="564, 634, 286, 44" CvType="InputBox" DesignTimeRectangle="568, 652, 280, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Work section' role='grouping' /&gt;&lt;ctrl name='Title' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Work section' role='grouping' /&gt;&lt;ctrl name='Title' role='editable text' automationid='' /&gt;" Guid="e8532e6d-831e-4c20-8d78-cb398e9193ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARwAAAAdCAYAAAB439PxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACCSURBVHhe7dSxDYAwEARBF4qQ+2/CZAQQ/0Yz0iVXwK4DEFnfA2CK4AAZwQEyggNkBAfICA6QERwgIzhARnCAjOAAGcEBMoIDZAQHyAgOkBEcICM4QEZwgIzgABnBATKCA2QEB8gIDpARHCAjOEBGcICM4ACZNzj7vszMRvYLDsC0B/gsJmuhtX4VAAAAAElFTkSuQmCC" InformativeScreenshot="7656ac4a854f840af2b6ee1986b312da.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="e80bb18b-1ca7-4928-8f20-fa0d486d52a5" CvElementArea="564, 634, 286, 44" CvType="InputBox" DesignTimeRectangle="568, 636, 23, 16" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Work section' role='grouping' /&gt;&lt;ctrl idx='3' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Work section' role='grouping' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" Guid="a11c6931-b2f1-4603-ae4c-6d8e5c073ba2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAYAAAB8gkaAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVEhL7ZPBCcAgDEU7m3cHcAnv3t3ETVzCITx7TvlCDo3poZAKhT4QwWBejHrQRg658Ca/zIT9sjEGxRjJOXcZ3ntqrVHOmUopcu8EsVqrXFZZToaNSHCHjH9bxgkxtBazTF6HLOKRTItzDKKU0iwA9N6nGDNjJkPSEIL6wBhTmTyJxEzG93X3RcBjGbdLeyCylZCjCGaRvckvM2Gr7AS+k+kcBiQ7UgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c72c4c3f-ff29-463f-b94d-933a56e0272d" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="b0295729-591b-49e1-9a0f-6094a7d21e52" CvElementArea="277, 944, 83, 34" CvTextArea="302, 954, 32, 13" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="278, 945, 80, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Save' role='push button' automationid='' check:fulltext='Save' /&gt;" Guid="c8c34d82-7eea-4966-b53a-708107472ca9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAkCAYAAAAXSR0AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKfSURBVGhD7ZpNi9pAGMf3S3nuR/BzLHgQevUiveW0Byl78iBeylIWi9BZCrKCXXG3Lb5UG8QlSGqQoIS4EhIl/MvkxbfYw9rRYHke+EGSGWbCL88zmcNcgEJoXOw+oPi3WAn9VP+NN2+/IJFixCvgzri7iFCSeTjcXUTobifidZBQwZBQwZBQwZBQwZBQwZBQwZBQwZBQwcQnNNtCsW9htli9Axx9jMxuvzMjjBMLraKout58M00Ha2hgP6ZQxjquIn3Pi5iEyniyAEzHuIy0nTcxCW2hZvLZlngqP+xpf0S+M99aDmbDIdIphkzH9u7lyrq//8xFu8zvv/tLiV8AgGWhdlvdM8dxCOPEQhmStzpGgTDHNMFuNsXKqI3nqNz1kCn0UdF9O0q9ikROw4jfqErQN/g4po53qSqu+ktP7qjZR+ZmiPYLgIWJYjb6DscgjJML9ZB6KA0sOJ4vF5OOjORuH87HKWY8S/uyl71MB2AbyPO2go4JgEn3JxIpFYone7gep+KVApSve8Y9AvEKDZF6qEz57DZqBf7sAVLDgGIs4dhh7YZCGZL3XJKL9uew3C2w3Fr8vlDqe+Y9AmHEK5RLavC/lJ9Jl9/861H3GVKhhXR5M0P5lmsI2QWcgeqX+yoj/Qx1VBWZQmuLtBSd8xjEJFSF/GKh3dWCLZOBCV9PF3OUcgzSL74OIlgHn1EL1tCV0BRDXnEBa+mJlu/Dn84jShrvu4TS9D+GdDeGrI1Pth2LSWgfNV7O62rGzDDBPgRiroeQ+c+Eh2uj3TS3M5RTNuDwdtvA+82xsz0wbWNsd4nJQDnZ9iyMEwv9fyGhgiGhgiGhgiGhgiGhgiGhgiGhgiGhgokIpcNih7P3sBgdZzyMvx5npBATJFRw/AHGVX6S2lQVBAAAAABJRU5ErkJggg==" InformativeScreenshot="e7dfd98a7bc04ada2bf59c87b7b99738.png" ScopeSelectorArgument="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='People - Sergey Morozov - Outlook' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CVScreenId="b0295729-591b-49e1-9a0f-6094a7d21e52" CvElementArea="277, 944, 83, 34" CvTextArea="302, 954, 32, 13" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="303, 951, 30, 19" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Save' role='push button' /&gt;&lt;ctrl name='Save' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='People - Sergey Morozov - Outlook - Web content' cls='Chrome_WidgetWin_1' title='People - Sergey Morozov - Outlook' /&gt;&lt;ctrl name='People - Sergey Morozov - Outlook' role='document' /&gt;&lt;ctrl name='Save' role='push button' /&gt;&lt;ctrl name='Save' role='text' automationid='' check:text='Save' /&gt;" Guid="5391191d-8b29-44ef-8307-f425ff639784" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAXCAYAAABu8J3cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIUSURBVEhL7ZTLattAFIbzUn4OP0dACz+AN6Y7rbIwpassjDcllGAwdLIxMagJTtriS+0K4SCEsDDCRsgxwrIRXxnJF8l1Qhdp64UHftCMzpz55j9HOsspgmPQ2f7C/9IJZF8nkH0dKUipQ9UImC3ZjtAdUzyw8a2VAmlStaP48JnjIloO4vsUc+xycWDjWysFovMYANMx5wcC/7ZSIB00X/qx4rF+91tgTnngsjfPlG1mWRQUQbG3iOd6YxefrEV063L+LSl5YjgEAdp18yUQQf7aZbQ+KPR9xFUaSEcbz2ncDChWDBpuktW8b5IrO4zkxDazl/Jd3ilNLoxVDDVqGxSvLLrPwNKnWnoBJJY6oDYMCONzIiY9nfx+jNSnKTPpiqHHbgkXWHhcyncVlwkw6f8gp9iYMaS1y9OIrcf88hpICqgxleELtIpcu0NteZjeinCx8XgDIsjfyuQR3c+bsgSI8g740DDv/wREJm/J7k3Iz78mz6P+E2qlQ6GedkR++hZ6BOHQTsqydSBxJLRtipVORgX1IIiN/hzQ7TvrT9djIvtlOadWFqg/ZZ1Z1/kJbd0jWxBFcGlGEKxiQP1204wP1BwZu8JsJ5dQb8bozjjzW0iBGGjS9p3rzDwf8XGd8IOFLptMjmhBt+1nHZGqe4Ty/cLjfeqQXGmAcFK5oxWToZn5Tbxamn+pE8i+TiD7OhqQX8oZ+IpQX8PIAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="113, 36, 1108, 1023" FilePath="Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVOSURBVFhH7ZN7TFNXHMcP0ywG+gCsNbose6qNy3SyzI3MDbUFZYrbf8seLsZtOp2AvJk4p0LUrQoqvtkcYjYfU6obWbQZKuh88Ia2tMUiBV/jgtAp8obvck5v6+2lIm7LkiX+km/annN7P9/fi5BH8X8PlY6bpNJxx1U6ro3XMXomfu5fD5WOU6h03A6VjutV6TiIRM/onUL8v38cE3K54SodF6XScS1ewGK1BG4ojyJRBcPF7/lbodJxoSodZ/ICGqCn99nhm3IeJOY8SFKVkSQbQ8XvG3KodNzzfG8HgMQad+g6/NOK4RNVAJJQBpJsFOoYSTY+7/Hy0WnWbGWqtV+ZaoVyrYVp1Bpeqy1QrDYzjfyK1yozAldVI/DLaozdVANVbiMDTzjaCGVGFYZFnwKJvUSzFsNd6iTJxg3k/aMSZkCZau1TpvJgHq6g4sEKL2CqgJVOjdtfgyd3W/F43GmQ6LMgiRVioKeiL4K8nQ2izjSTsKzRRAhmcC9gBufBgTw4IIXKBN/IXJBl+SBxJSDJhoFAl+LLQd49DDJzM0joLpCwLKoc4gYL4E+kWhF57AZySlrxQ5kDiXk38VSaxZ01BftTrTCBfKwbPOskA8iCPBDNFhD1dpCwPS44lYMIwTTjyek22Jq7QON2Zx9a23vZ92uObrySYXOD/b8wQU4BS/T3z3zJGZDwHSAzt4CE7haCmZHHZmeBiMtdeOUuA67VN2IUX/rY4zfZWdm1dh5uZHA5zc6bgeVFIO98DzJ9E4hmhwjshNNqSBYcAhH2+eUMGwMVNbR79JlmXVjbxu6CMy4zsDzRAFl8laeBhAqQ9w6DTNfSIROX2ylaiZlbMUytxbPfWUGEAzb/x6sMsrmw2aPPtNwbTzexu4/210OeUMXgsrhKpwFaiYW/gqjTQWZkCIdMAN4DotkOEqKFdP5eTNh/GRN/bgIRrtWCA7yBgmaPPsuTjNDmc+zug2w7A8tiKyGNqQCZfxgkfBtIyDfehsz5W7MTZHo6RszbinE7SxCU34pJJ27xBgRrFbyllkEu2O/e63OiAfIEA85cvsPuXlpnhiymAtLlFZBGl8NnahLIDLpa4iGjWe9iAzhco8UzG/IR/LsDr569jaB8xz0Dzj5XOzNeYUJRfTsDpeTdRECSAf6JBsTmXmdnBTV33GBpVDmkkWXwmZY6MGtqRr0NPiFfY0zcEUw714SQ8na8fqnNaeCUwIB4rYK0Nahv6WbAPzt64ehwrqGN68TE1SY3WLKsDJLPS0FeW8lgDErF+rwR8g+zMDXvCjTVXVAbOwcxIOizq9xjU4yIOXINORdvYd+FW1h2sAHK+EoPsGRpKfyWlMBvYQ6GabQgb6xnGjE3Ay/uLUaYpQuh5i7vBoQtEPbZOdlVbMCEfaZZS1zwpaWQUPBnJfBbXIzANeeg2FqLwHXlmHjAhjBzF2bV9CDM2j2IAcEQyhMN/e61YuBK72Bh1ouL4beoGL6fFjED43/6g0HCa3sx29aDWTXdDzAgqIAsvipbFlfZ71oraXTFgD67wXzWFOz7ySWMjNQj+Dc75tT14q26XoTX9jy8gfuFbFEWBtNzaQfxZl4RZptaMcfuMuCqwINaMAQDASn6joAUPbxpzPrTUBdaMKv0BubYOjHX3jdkA1M9DXSIue4YmW4+qUi3wJvGH2xAxJUORNh7EFHf91AGPNbwlya9mOsORWbdFEVmXZsisw5ijf22ARENfZh3tZ99PrQBVoGWthfymqeIuR7Bm9ArMus6xCbGH2lEmKXbXQE6iEPcgvagU44Tk0+2DA5/FP9V/AVY7vM8tVs0RAAAAABJRU5ErkJggg==" InformativeScreenshot="a80913199afe46cf61fcbabcddb0d494.png" Selector="&lt;wnd app='olk.exe' appid='Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows' title='Mail - Sergey Morozov - Outlook' /&gt;" Version="V2" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                      <Assign sap:VirtualizedContainerService.HintSize="506,114" sap2010:WorkflowViewState.IdRef="Assign_13">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[rangeAddress]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow.Item("טופל ב").ToString()]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="506,115" sap2010:WorkflowViewState.IdRef="Assign_14">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[rowNumber]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32" xml:space="preserve">[If(rangeAddress IsNot Nothing, 
+          Convert.ToInt32(rangeAddress.Split("$"c)(2)),
+          0)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ueab:InvokeVBAX Result="{x:Null}" CodeFilePath="C:\Users\User31.8.23\Desktop\תרגיל מועמד שלא עבר הכשרה - UiPath\Contacts\macro.txt" DisplayName="Invoke VBA" EntryMethodName="[DateTime.Now.ToString(&quot;dd/MM/yyyy HH:mm:ss&quot;, New System.Globalization.CultureInfo(&quot;he-IL&quot;))]" sap:VirtualizedContainerService.HintSize="506,403" sap2010:WorkflowViewState.IdRef="InvokeVBAX_2" Workbook="[Excel]">
+                        <ueab:InvokeVBAX.Body>
+                          <ActivityAction>
+                            <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:InvokeVBAArgumentX ArgumentValue="[rowNumber]" DisplayName="VBA Argument" sap:VirtualizedContainerService.HintSize="390,95" sap2010:WorkflowViewState.IdRef="InvokeVBAArgumentX_2" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:InvokeVBAX.Body>
+                      </ueab:InvokeVBAX>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelForEachRowX.Body>
+              </ueab:ExcelForEachRowX>
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+      </ueab:ExcelApplicationCard>
+    </FlowStep>
+  </Flowchart>
+</Activity>
